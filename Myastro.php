@@ -1,4 +1,5 @@
 <?php
+require "Myastroapi.php";
 class Myastro extends Myastroapi
 {
 private $api;
@@ -16,9 +17,10 @@ curl_setopt($init,CURLOPT_URL,trim($this->url));
 curl_setopt($init,CURLOPT_POST,TRUE);
 curl_setopt($init,CURLOPT_RETURNTRANSFER,TRUE);
 curl_setopt($init,CURLOPT_POSTFIELDS,["api"=>$this->api,"version"=>$this->version]);
-$data=curl_exec();
+$data=curl_exec($init);
 $getinfo=curl_getinfo($data);
 $status=$getinfo["http_code"];
+curl_close($init);  
 if($status==200)
 {
 return [true,$data];
