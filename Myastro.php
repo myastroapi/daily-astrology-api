@@ -8,7 +8,8 @@ private $version;
 function __construct()
 {
 $this->api=$this->_api;
-$this->url=$_url;
+$this->url=$this->_url;
+$this->version=$this->_version;  
 }
 protected function getapi()
 {
