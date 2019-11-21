@@ -8,17 +8,18 @@ Just download and unzip file then require 'Myastro.php' and you have done.
 
 
 <h2>Configuration</h2>
-you do not need too much to configure this library. just open Myastroapi.php and put your api key in $this->_api="your api key";
+you do not need too much to configure this library. just open Myastroapi.php and put your api key in <br/>
+<code>$this->_api="your api key";</code>
 
 <h2>Uses</h2>
 Call function <code>$this->getdaily();</code> and you have done;
 
 <h2>Example:</h2>
 <code>
-require "Myastro.php";
-$api=new Myastro();
-$data=$api->getdaily();
-print_r($data);
+require "Myastro.php";<br/>
+$api=new Myastro();<br/>
+$data=$api->getdaily();<br/>
+print_r($data);<br/>
 </code>
 it will return array of today daily api by rashi or sign.<br/>
 
