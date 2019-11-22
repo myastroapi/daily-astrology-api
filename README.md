@@ -1,5 +1,5 @@
 # daily-astrology-api
-this is unofficial daily astrology api for public use. it is also used by http://www.myastro.online
+this is unofficial daily astrology api for public use. it is also used by <a href='http://www.myastro.online'>Best Astrology website</a>
 
 this library is standalone so no need to download extra package to work.
 
