@@ -15,7 +15,7 @@ $this->_url="http://service.kundalimilan.online/api/version.php";
 }
 private function initapikeyfromfile()
 {
-$fp=fopen(__DIR__."/__api.txt","W");
+$fp=fopen(__DIR__."/__api.txt","r");
 $api=trim(fread($fp,1024));
 //you should need to check for api key character  
 fclose($fp); 
