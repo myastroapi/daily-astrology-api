@@ -18,11 +18,13 @@ Call function <code>$this->getdaily();</code> and you have done;
 <code>
 require "Myastro.php";<br/>
 $api=new Myastro();<br/>
-$data=$api->getdaily();<br/>
-print_r($data);<br/>
+$response=$api->getdaily();<br/>
+echo $response->aries->color; 
 </code>
-it will return array of today daily api by rashi or sign.<br/>
-
+it will return object of today daily api by rashi or sign.<br/>
+<h2>Reponse object</h2>
+After Call function getdaily you would get reponse object for compete
+Response object description look at our https://github.com/myastroapi/daily-astrology-api/wiki documentation
 <h2>Api Key</h2>
 you can get your api by Email on: suryarashicalculator@gmail.com in following format<br/>
 Subject: Api key github<br/>
