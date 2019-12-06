@@ -7,6 +7,7 @@ private $url;
 private $version;
 function __construct()
 {
+parent::__construct();  
 $this->api=$this->_api;
 $this->url=$this->_url;
 $this->version=$this->_version;  
@@ -36,7 +37,7 @@ function getdaily()
 $data=$this->getapi();
 if($data[0])
 {
-return json_decode($data,true);
+return json_decode($data[1]);
 }
 else
 {
