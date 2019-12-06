@@ -8,8 +8,7 @@ Just download and unzip file then require 'Myastro.php' and you have done.
 
 
 <h2>Configuration</h2>
-you do not need too much to configure this library. just open Myastroapi.php and put your api key in <br/>
-<code>$this->_api="your api key";</code>
+you do not need too much to configure this library. just open __api.txt file and write your api key there. you have done.
 
 <h2>Uses</h2>
 Call function <code>$this->getdaily();</code> and you have done;
