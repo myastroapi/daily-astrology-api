@@ -1,9 +1,9 @@
 <?php
 class Myastroapi
 {
-private $_api;
-private $_version;
-private $_url;
+protected $_api;
+protected $_version;
+protected $_url;
 function __construct()
 {
 //add your api key here
